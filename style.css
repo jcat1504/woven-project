@@ -1,0 +1,561 @@
+html { 
+  height: 100%;
+  border: 2vw solid white;
+  background: url(imgs/banner.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-origin: content-box;
+  z-index: -1;
+} 
+
+/*drop down hover menu */
+
+.dropdown-toggle {
+  bottom: 36px !important;
+}
+.dropdown {
+    /** Make it fit tightly around it's children */
+    top: 0;
+    z-index: 128;
+}
+
+.dropdown:hover .dropdown-menu {
+    /** Show dropdown menu */
+    display: block;
+    color: white;
+  width: 100%;
+} 
+
+.dropdown > ul > li {
+  left: 0;
+  right: 0;
+} 
+/*END*/
+
+a#title {
+  background-image: url("https://wovenmagazine.com/content/themes/woven/assets/svg/logo.svg");
+  left: 50%;
+  display: inline-block;
+  position: relative;
+  transform: translateX(-50%);
+  display: ;
+  width: 130px;
+  height: 23px;
+  bottom: 10px;
+  z-index: 120;
+}
+
+
+/*Quick Shop Text Icon Responsive Media */
+a#quick-shop {
+  display: none;
+}
+
+@media screen and (min-width: 720px) {
+a#quick-shop {
+  position: relative;
+  display: inline-block;
+  left: 8%;
+  height: 100%;
+  z-index: 125;
+  bottom: 16px;
+  font-family: 'p22-underground', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: black;
+  }
+}
+
+@media only screen and  (min-width: 768px) {
+a#quick-shop {
+  position: relative;
+  display: inline-block;
+  left: 8%;
+  height: 100%;
+  z-index: 125;
+  bottom: 16px;
+  font-family: 'p22-underground', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: black;
+  }
+} 
+
+@media only screen and  (min-width: 992px) {
+a#quick-shop {
+  position: relative;
+  display: inline-block;
+  left: 6%;
+  height: 100%;
+  z-index: 125;
+  bottom: 20px;
+  font-family: 'p22-underground', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: black;
+  }
+}
+
+@media only screen and  (min-width: 1200px) {
+a#quick-shop {
+  position: relative;
+  display: inline-block;
+  left: 4%;
+  height: 100%;
+  z-index: 125;
+  bottom: 20px;
+  font-family: 'p22-underground', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: black;
+  }
+}
+
+
+/*Search Icon w/Responsive Media */
+img#search-icon {
+  position: relative;
+  display: block;
+  left: 80%;
+  height: 100%;
+  z-index: 125;
+  bottom: 20px;
+  vertical-align: bottom;
+}
+
+@media only screen and  (max-width: 600px) {
+img#search-icon {
+  display: inline-block;
+  left: 80%;
+  z-index: 125;
+  bottom: 40px;
+  }
+}
+
+@media only screen and  (min-width: 600px) {
+img#search-icon {
+  position: relative;
+  display: inline-block;
+  left: 85%;
+  z-index: 125;
+  bottom: 65px;
+  }
+}
+
+@media only screen and  (min-width: 768px) {
+img#search-icon {
+  position: relative;
+  display: block;
+  left: 95%;
+  z-index: 125;
+  bottom: 65px;
+  /*+12 diff */
+  }
+}
+
+@media only screen and  (min-width: 992px) {
+img#search-icon {
+  position: relative;
+  display: block;
+  left: 76%;
+  z-index: 125;
+  bottom: 65px;
+  }
+}
+
+@media only screen and  (min-width: 1200px) {
+img#search-icon {
+  position: relative;
+  display: block;
+  left: 74%;
+  z-index: 125;
+  bottom: 65px;
+  }
+}
+
+
+
+/*Cart Icon Responsive Media */
+img#cart-icon {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+img#cart-icon {
+   position: relative;
+  display: inline-block;
+  left: 63%;
+  z-index: 125;
+  bottom: 20px;
+  vertical-align: bottom;
+  
+  }
+}
+
+@media screen and (max-width: 600px) {
+img#cart-icon {
+  position: relative;
+  display: inline-block;
+  left: 76%;
+  z-index: 125;
+  bottom: 42px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+img#cart-icon {
+   display: none;
+  }
+}
+
+
+
+/*Cart Text Responsive Media */
+a#cart {
+  display:none;
+}
+
+@media screen and (min-width: 720px) {
+a#cart {
+  position: relative;
+  display: inline-block;
+  left: 68%;
+  height: 100%;
+  z-index: 125;
+  bottom: 20px;
+  font-family: 'p22-underground', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: black;
+  }
+}
+
+@media only screen and  (min-width: 768px) {
+a#cart {
+  position: relative;
+  display: inline-block;
+  left: 66%;
+  height: 100%;
+  z-index: 125;
+  bottom: 18px;
+  font-family: 'p22-underground', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: black;
+  }
+}
+
+@media only screen and  (min-width: 992px) {
+a#cart {
+  position: relative;
+  display: inline-block;
+  left: 78%;
+  height: 100%;
+  z-index: 125;
+  bottom: 20px;
+  font-family: 'p22-underground', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: black;
+  }
+}
+
+@media only screen and  (min-width: 1200px) {
+a#cart {
+  position: relative;
+  display: inline-block;
+  left: 75%;
+  height: 100%;
+  z-index: 125;
+  bottom: 20px;
+  font-family: 'p22-underground', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: black;
+  }
+}
+
+
+/*Hamburger Menu */
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300');
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+
+.title-bar {
+  background-color: transparent;
+  z-index: 100;
+  display: inline;
+}
+
+
+.outer-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 25;
+    z-index: 120;
+    height: 10px;
+    width: 100%;
+} 
+
+.outer-menu .checkbox-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 103;
+    width: 100%;
+    height: 40px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+
+.outer-menu .hamburger {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 102;
+    width: 30px;
+    height: 40px;
+    background: transparent;
+    border-radius: 0 0.12em 0.12em 0;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.inner-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+    transition: all 0.3s ease-out 0.2s;
+}
+
+.outer-menu .hamburger > div {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: black;
+    top: 0px;
+}
+
+.outer-menu .hamburger > div:before, 
+.outer-menu .hamburger > div:after {
+    content: '';
+    position: absolute;
+    z-index: 100;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: inherit;
+}
+
+.outer-menu .hamburger > div:after {
+    top: 10px;
+}
+
+.outer-menu .hamburger > div,
+.outer-menu .hamburger > div:before,
+.outer-menu .hamburger > div:after {
+    transition: all 0.4s ease-out 0.3s;
+}
+
+.outer-menu .hamburger > div .nav-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 25px;
+    color: #c5c5c5;
+    display: block;
+    font-family: 'p22-underground', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    visibility: hidden;
+    transition: all 0.4s ease 0.4s; 
+}
+
+.checkbox-toggle + .hamburger > div .nav-links:hover {
+      color: black;
+      transition: all 0.4s ease;
+}
+
+
+
+
+.outer-menu .close {
+    cursor: pointer;
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    left: -100px;
+    z-index: 102;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.250rem;
+    visibility: hidden;
+    transition: all 0.5s ease 0.5s;
+}
+
+/* transitioned states */
+.checkbox-toggle:checked + .hamburger {
+    width: 100%;
+    background: #fff;
+    top: 0;
+}
+
+.checkbox-toggle:checked ~ .inner-menu {
+    background-color: #fff;
+    height: 100%;
+    top: 0; 
+    opacity: 0.9;
+}
+
+.checkbox-toggle:checked ~ a > .mobile-logo {
+    opacity: 0;
+}
+
+/* Hamburger Icon */
+.checkbox-toggle:checked + .hamburger > div,
+.checkbox-toggle:checked + .hamburger > div:before,
+.checkbox-toggle:checked + .hamburger > div:after {
+    height: 0px;
+    background: #363537;
+} 
+
+.checkbox-toggle:checked + .hamburger > div {
+    top: 200px;
+}
+
+.checkbox-toggle:checked + .hamburger > div:before {
+    top: -100px;
+}
+
+.checkbox-toggle:checked + .hamburger > div:after {
+    top: 100px;
+}
+
+/* Nav Links */
+.checkbox-toggle:checked + .hamburger > div .nav-links {
+    visibility: visible;
+}
+
+
+.checkbox-toggle:checked + .hamburger > div #nav-1 {
+    top: -110px;
+}
+
+.checkbox-toggle:checked + .hamburger > div #nav-2 {
+    top: -55px;
+}
+
+.checkbox-toggle:checked + .hamburger > div #nav-3 {
+    top: 0px;
+}
+
+.checkbox-toggle:checked + .hamburger > div #nav-4 {
+    top: 55px;
+  /* +55 */
+}
+
+.checkbox-toggle:checked + .hamburger > div #nav-5 {
+    top: 110px;
+}
+
+.checkbox-toggle:checked + .hamburger > div #nav-6 {
+    top: 180px;
+    color: #fff;
+}
+
+.checkbox-toggle:checked + .hamburger > div #nav-7 {
+    top: 235px;
+}
+
+
+#nav-6 {
+  padding-bottom: 2rem;
+  color: #fff;
+   position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    line-height: 40px;
+    color: #c5c5c5;
+    letter-spacing: 1.5px;
+    font-weight: 00;
+    font-size: 11.5px;
+    background: #5AB48B;
+    font-family: 'p22-underground', sans-serif;
+  text-transform: uppercase;
+
+
+}
+
+ .button {
+   height: 45px;
+   width: 200px;
+  margin: 0 auto;
+
+}
+
+#nav-7 a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-style: italic;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 200;
+  font-family: 'minion-pro', serif;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  padding-right: 30px;
+}
+
+
+.checkbox-toggle:checked ~ .close {
+    visibility: visible;
+    left: 10px;
+    top: 0px;
+}
+
+/* Reverse Transitions */
+.checkbox-toggle:not(:checked) + .hamburger {
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    transition: all 0.5s ease-out 0.6s;
+}
+
+.checkbox-toggle:not(:checked) ~ .inner-menu {
+    height: 36px;
+    background-color: transparent;
+    transition: all 0.5s ease-out 0.5s;
+}
+
+.checkbox-toggle:not(:checked) + .hamburger > div .nav-links {
+    visibility: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.checkbox-toggle:not(:checked) ~ a > .mobile-logo {
+    opacity: 1;
+    transition: opacity 0.5s ease-in 0.65s;
+}
+
+/*End Hamburger Menu */
