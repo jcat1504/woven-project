@@ -1,38 +1,95 @@
 html { 
   height: 100%;
-  border: 2vw solid white;
+  /*border: 2vw solid white;*/
   background: url(imgs/banner.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-origin: content-box;
   z-index: -1;
 } 
 
-/*drop down hover menu */
+/* my problem is creating the border around html page because that messes up the div element of shop. 
 
+
+/*drop down hover menu */
 .dropdown-toggle {
-  bottom: 36px !important;
+  position: absolute;
+  display: inline-block;
+  top: -38px;
+  /*not the best solution but will do for now..*/
+
+  
 }
+
+.dropdown-menu {
+  width: 100%;
+  left: 0;
+  top: -20px;
+  /*not the best solution but will do for now.. */
+  overflow:hidden;
+  position: absolute;
+  background-color: white;
+  transition: all 0.8s ease-in-out;
+  /* do all or max-height. one or the other */
+  z-index: 1;
+  opacity: 0.9;
+}
+
 .dropdown {
     /** Make it fit tightly around it's children */
-    top: 0;
-    z-index: 128;
+  top: 0;
+  z-index: 128;
+  font-family: 'p22-underground', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
 }
 
 .dropdown:hover .dropdown-menu {
     /** Show dropdown menu */
-    display: block;
-    color: white;
+  max-height: 600px;
+  display: block;
+  color: white;
   width: 100%;
+  font-family: 'p22-underground', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
 } 
 
 .dropdown > ul > li {
   left: 0;
   right: 0;
 } 
+
+.dropdown-menu .header {
+  padding: 16px;
+  color: white;
+}
+
 /*END*/
+
+/* columns */
+/* Create three equal columns that floats next to each other */
+
+.column a {
+  width: 25%;
+  float: left;
+  height: 100%;
+  color: black;
+  padding: 10px;
+}
+
+.column a:hover {
+  background-color: #ddd;
+  } 
+
+/* Clear floats after the columns 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* end */
 
 a#title {
   background-image: url("https://wovenmagazine.com/content/themes/woven/assets/svg/logo.svg");
@@ -51,127 +108,111 @@ a#title {
 /*Quick Shop Text Icon Responsive Media */
 a#quick-shop {
   display: none;
-}
-
-@media screen and (min-width: 720px) {
-a#quick-shop {
-  position: relative;
-  display: inline-block;
-  left: 8%;
-  height: 100%;
-  z-index: 125;
-  bottom: 16px;
+  position: absolute;
   font-family: 'p22-underground', sans-serif;
   font-weight: 100;
   text-transform: uppercase;
   color: black;
+}
+
+ul .dropdown-menu {
+  margin-bottom: -10px;
+}
+
+@media screen and (min-width: 720px) {
+a#quick-shop {
+  position: absolute;
+  left: 8%;
+  height: 100%;
+  z-index: 125;
+  bottom: 16px;
   }
 }
 
 @media only screen and  (min-width: 768px) {
 a#quick-shop {
-  position: relative;
+  position: absolute;
   display: inline-block;
   left: 8%;
   height: 100%;
   z-index: 125;
   bottom: 16px;
-  font-family: 'p22-underground', sans-serif;
-  font-weight: 100;
-  text-transform: uppercase;
-  color: black;
   }
 } 
 
 @media only screen and  (min-width: 992px) {
 a#quick-shop {
-  position: relative;
+  position: absolute;
   display: inline-block;
   left: 6%;
   height: 100%;
   z-index: 125;
   bottom: 20px;
-  font-family: 'p22-underground', sans-serif;
-  font-weight: 100;
-  text-transform: uppercase;
-  color: black;
   }
 }
 
 @media only screen and  (min-width: 1200px) {
 a#quick-shop {
-  position: relative;
+  position: absolute;
   display: inline-block;
   left: 4%;
   height: 100%;
   z-index: 125;
   bottom: 20px;
-  font-family: 'p22-underground', sans-serif;
-  font-weight: 100;
-  text-transform: uppercase;
-  color: black;
   }
 }
 
 
 /*Search Icon w/Responsive Media */
 img#search-icon {
-  position: relative;
-  display: block;
-  left: 80%;
-  height: 100%;
+  position: absolute;
   z-index: 125;
-  bottom: 20px;
-  vertical-align: bottom;
+  right: 25px;
+  top: 15px;
 }
 
 @media only screen and  (max-width: 600px) {
 img#search-icon {
-  display: inline-block;
+  left: 90%;
+  z-index: 125;
+  top: 16px;
+  /*mobile*/
+  }
+}
+
+
+@media only screen and  (min-width: 640px) {
+img#search-icon {
+  left: 90%;
+  z-index: 125;
+  bottom: 65px;
+  /*tablet*/
+  }
+}
+
+
+@media only screen and  (min-width: 700px) {
+img#search-icon {
   left: 80%;
   z-index: 125;
-  bottom: 40px;
-  }
-}
-
-@media only screen and  (min-width: 600px) {
-img#search-icon {
-  position: relative;
-  display: inline-block;
-  left: 85%;
-  z-index: 125;
-  bottom: 65px;
-  }
-}
-
-@media only screen and  (min-width: 768px) {
-img#search-icon {
-  position: relative;
-  display: block;
-  left: 95%;
-  z-index: 125;
-  bottom: 65px;
-  /*+12 diff */
+  top: 15px;
+    /*help*/
   }
 }
 
 @media only screen and  (min-width: 992px) {
 img#search-icon {
-  position: relative;
-  display: block;
-  left: 76%;
+  left: 85%;
   z-index: 125;
-  bottom: 65px;
+  top: 20px;
   }
 }
 
 @media only screen and  (min-width: 1200px) {
 img#search-icon {
-  position: relative;
-  display: block;
-  left: 74%;
+  left: 88%;
   z-index: 125;
-  bottom: 65px;
+  top: 32px;
   }
 }
 
@@ -184,11 +225,11 @@ img#cart-icon {
 
 @media screen and (min-width: 600px) {
 img#cart-icon {
-   position: relative;
+   position: absolute;
   display: inline-block;
-  left: 63%;
+  left: 84%;
   z-index: 125;
-  bottom: 20px;
+  top: 16px;
   vertical-align: bottom;
   
   }
@@ -196,11 +237,11 @@ img#cart-icon {
 
 @media screen and (max-width: 600px) {
 img#cart-icon {
-  position: relative;
+  position: absolute;
   display: inline-block;
-  left: 76%;
+  left: 82%;
+  top: 15px;
   z-index: 125;
-  bottom: 42px;
   }
 }
 
@@ -211,69 +252,55 @@ img#cart-icon {
 }
 
 
-
 /*Cart Text Responsive Media */
 a#cart {
   display:none;
-}
-
-@media screen and (min-width: 720px) {
-a#cart {
-  position: relative;
-  display: inline-block;
-  left: 68%;
-  height: 100%;
-  z-index: 125;
-  bottom: 20px;
+  top: 28px;
+  font-size: 18px;
   font-family: 'p22-underground', sans-serif;
   font-weight: 100;
   text-transform: uppercase;
   color: black;
+}
+
+
+@media screen and (min-width: 720px) {
+a#cart {
+  position: absolute;
+  display: inline-block;
+  right: 8%;
+  z-index: 125;
+  top: 16px;
   }
 }
 
 @media only screen and  (min-width: 768px) {
 a#cart {
-  position: relative;
+  position: absolute;
   display: inline-block;
-  left: 66%;
+  right: 4%;
   height: 100%;
   z-index: 125;
-  bottom: 18px;
-  font-family: 'p22-underground', sans-serif;
-  font-weight: 100;
-  text-transform: uppercase;
-  color: black;
   }
 }
 
-@media only screen and  (min-width: 992px) {
+@media only screen and (min-width: 992px) {
 a#cart {
-  position: relative;
+  position: absolute;
   display: inline-block;
-  left: 78%;
+  right: 5%;
   height: 100%;
   z-index: 125;
-  bottom: 20px;
-  font-family: 'p22-underground', sans-serif;
-  font-weight: 100;
-  text-transform: uppercase;
-  color: black;
+  top: 19px;
   }
 }
 
-@media only screen and  (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 a#cart {
-  position: relative;
-  display: inline-block;
-  left: 75%;
-  height: 100%;
+  position: absolute;
+  right: 5%;
+  top: 30px;
   z-index: 125;
-  bottom: 20px;
-  font-family: 'p22-underground', sans-serif;
-  font-weight: 100;
-  text-transform: uppercase;
-  color: black;
   }
 }
 
