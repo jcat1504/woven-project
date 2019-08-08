@@ -30,10 +30,11 @@ html {
   overflow:hidden;
   position: absolute;
   background-color: white;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease;
   /* do all or max-height. one or the other */
   z-index: 1;
   opacity: 0.9;
+ 
 }
 
 .dropdown {
@@ -54,6 +55,8 @@ html {
   font-family: 'p22-underground', sans-serif;
   font-weight: 100;
   text-transform: uppercase;
+  padding-top: 0;
+  padding-bottom: 0;
 } 
 
 .dropdown > ul > li {
@@ -62,7 +65,6 @@ html {
 } 
 
 .dropdown-menu .header {
-  padding: 16px;
   color: white;
 }
 
@@ -74,22 +76,41 @@ html {
 .column a {
   width: 25%;
   float: left;
-  height: 100%;
   color: black;
-  padding: 10px;
+
 }
 
-.column a:hover {
-  background-color: #ddd;
-  } 
-
-/* Clear floats after the columns 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.column {
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
 }
+
 /* end */
+
+/* shopping stuff*/
+.column img {
+  max-height: 100%;
+  max-width: 100%;
+  height: 40vh;
+  width: 60vw;
+  object-fit: cover;
+  /*object fit cover will not distort images! */
+}
+
+
+.btn-shop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-box {
+  background-color: aqua;
+  width: 100%;
+  z-index: 100;
+  height: 100%;
+}
 
 a#title {
   background-image: url("https://wovenmagazine.com/content/themes/woven/assets/svg/logo.svg");
