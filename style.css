@@ -146,13 +146,6 @@ a.lighten:hover span {
 }
 
 @media only screen and (min-width: 1200px) {
-    a.lighten span.text-earl {
-        top: 45%;
-        left: 45%;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
     a.lighten span {
         top: 45%;
         left: 30%;
@@ -240,10 +233,9 @@ a#title {
     display: inline-block;
     position: relative;
     transform: translateX(-50%);
-    display: ;
     width: 130px;
     height: 23px;
-    bottom: 10px;
+    bottom: 4px;
     z-index: 120;
 }
 
