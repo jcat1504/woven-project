@@ -768,7 +768,6 @@ h1 {
 .animate-reveal {
     font: bold 1.5em sans-serif;
     text-transform: uppercase;
-    letter-spacing: 2px;
     position: absolute;
     top: 68%;
     text-align: center;
