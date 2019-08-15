@@ -1,5 +1,5 @@
 html {
-    height: 100%;
+    height: 1000px;
     /*border: 2vw solid white;*/
     background: url(imgs/banner.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -9,6 +9,17 @@ html {
     z-index: -1;
 }
 
+.bottomMenu {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    border-top: 1px solid #000;
+    background: #c5c5c5;
+    opacity: 0.5;
+    z-index: 1;
+}
 
 /* my problem is creating the border around html page because that messes up the div element of shop. 
 
