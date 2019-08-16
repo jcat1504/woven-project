@@ -1,7 +1,13 @@
 html {
-   
     /*border: 2vw solid white;*/
     z-index: -1;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 1200px) {
+    html {
+        overflow: hidden;
+    }
 }
 
 .bottomMenu {
@@ -27,7 +33,7 @@ html {
 }
 
 .wrapper {
-  max-height: 94.5vh;
+  height: 100vh;
   background-size: cover;
   overflow-x: hidden;
   overflow-y: auto;
@@ -37,12 +43,12 @@ html {
 
 .section {
   position: relative;
-  height: 100vh;
+  height: 94.5vh;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 48px;
-  color: white;
+  color: red;
 }
 
 .parallax::after {
@@ -66,8 +72,29 @@ html {
   height: 200vh;
   display: flex;
   justify-content: center;
-  background: red;
+  background: #c5c5c5;
 }
+
+.white-border {
+    height: 100px;
+    width: 100%;
+    background: #fff;
+    z-index: 2;
+}
+
+
+.design-column p {
+    width: 50%;
+    float: left;
+    color: black;
+}
+
+.design-column {
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
 
 /* my problem is creating the border around html page because that messes up the div element of shop. 
 
@@ -599,7 +626,7 @@ h1 {
     left: 0;
     right: 0;
     z-index: 100;
-    height: 40px;
+    height: 60px;
     width: 100%;
     background-color: transparent;
     transition: all 0.3s ease-out 0.2s;
