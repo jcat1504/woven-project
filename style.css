@@ -1,12 +1,99 @@
 html {
     height: 1000px;
     /*border: 2vw solid white;*/
-    background: url(imgs/banner.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     z-index: -1;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 1200px) {
+    html {
+        overflow: hidden;
+    }
+}
+
+.bottomMenu {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 600px;
+    border-top: 1px solid #000;
+    background: #fff;
+    z-index: 1;
+}
+
+.bottomMenu2 {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1000;
+    border-top: 1px solid #000;
+    background: #fff;
+    z-index: 1;
+}
+
+.wrapper {
+  height: 100vh;
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+}
+
+
+.section {
+  position: relative;
+  height: 94.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: red;
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(2);
+  background-size: 100%;
+  z-index: -1;
+  background: url(imgs/banner.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.content {
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  background: #c5c5c5;
+}
+
+.white-border {
+    height: 100px;
+    width: 100%;
+    background: #fff;
+    z-index: 2;
+}
+
+
+.design-column p {
+    width: 50%;
+    float: left;
+    color: black;
+}
+
+.design-column {
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
 }
 
 .bottomMenu {
@@ -551,7 +638,7 @@ h1 {
     left: 0;
     right: 0;
     z-index: 100;
-    height: 40px;
+    height: 60px;
     width: 100%;
     background-color: transparent;
     transition: all 0.3s ease-out 0.2s;
