@@ -5,7 +5,6 @@ $(document).scroll(function () {
     } else {
         $('.bottomMenu').fadeOut();
     }
-
 });
 
 $(document).scroll(function () {
@@ -15,5 +14,4 @@ $(document).scroll(function () {
     } else {
         $('.bottomMenu2').fadeOut();
     }
-
 });

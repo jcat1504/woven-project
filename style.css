@@ -1,4 +1,5 @@
 html {
+    height: 1000px;
     /*border: 2vw solid white;*/
     z-index: -1;
     overflow: hidden;
@@ -95,6 +96,17 @@ html {
     max-height: 100%;
 }
 
+.bottomMenu {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    border-top: 1px solid #000;
+    background: #c5c5c5;
+    opacity: 0.5;
+    z-index: 1;
+}
 
 /* my problem is creating the border around html page because that messes up the div element of shop. 
 
@@ -854,7 +866,6 @@ h1 {
 .animate-reveal {
     font: bold 1.5em sans-serif;
     text-transform: uppercase;
-    letter-spacing: 2px;
     position: absolute;
     top: 68%;
     text-align: center;
