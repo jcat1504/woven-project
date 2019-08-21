@@ -72,11 +72,41 @@ html {
   height: 200vh;
   display: flex;
   justify-content: center;
-  background: #c5c5c5;
+  background:  #edecec;
+  font-family: 'minion-pro', serif;
+  font-size: 0;
 }
 
+.design-travel {
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 5%;
+    padding: 5%;
+}
+
+em  {
+font-weight: 100;
+}
+
+.about-us-text {
+    font-family: "p22-underground",sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 6%; 
+    padding: 0;
+}
+
+.design-travel-content {
+    font-family: "minion-pro", serif;
+    font-size: 16px;
+}
+
+
+
+
 .white-border {
-    height: 100px;
+    height: 215px;
     width: 100%;
     background: #fff;
     z-index: 2;
@@ -89,11 +119,31 @@ html {
     color: black;
 }
 
+
+
+
+
+@media only screen and (min-width: 1200px) {
+    .design-column p {
+        margin-top:3%;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .design-column p{
+        margin-top: 3%;
+    }
+}
+
 .design-column {
     max-width: 100%;
     overflow: hidden;
     max-height: 100%;
 }
+
+
+
+
 
 
 /* my problem is creating the border around html page because that messes up the div element of shop. 
