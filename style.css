@@ -44,11 +44,7 @@ html {
 .section {
   position: relative;
   height: 94.5vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 48px;
-  color: red;
 }
 
 .parallax::after {
@@ -68,13 +64,22 @@ html {
   background-size: cover;
 }
 
+/*content is for design&travel white box only */
 .content {
+  display: flex;
+  justify-content: center;
+  background:  #edecec;
+  font-family: 'minion-pro', serif;
+}
+
+/*content2 is everything else under white box*/
+.content2 {
   height: 200vh;
   display: flex;
   justify-content: center;
   background:  #edecec;
   font-family: 'minion-pro', serif;
-  font-size: 0;
+  z-index: 100;
 }
 
 .design-travel {
@@ -995,3 +1000,7 @@ h1 {
         transform: translateY(0);
     }
 }
+
+
+
+
