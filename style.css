@@ -75,11 +75,25 @@ html {
 /*content2 is everything else under white box*/
 .content2 {
   height: 200vh;
-  display: flex;
-  justify-content: center;
   background:  #edecec;
   font-family: 'minion-pro', serif;
   z-index: 100;
+}
+
+.box {
+
+    display:flex;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-flow: column wrap;
+    height: 100vh;
+}
+
+.column-flex {
+    width: 40%;
+    height: 50%;
+    border: 1px solid white;
+    background-color: aqua;
 }
 
 .design-travel {
