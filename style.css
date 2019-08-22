@@ -80,21 +80,7 @@ html {
   z-index: 100;
 }
 
-.box {
 
-    display:flex;
-    justify-content: center !important;
-    align-items: center !important;
-    flex-flow: column wrap;
-    height: 100vh;
-}
-
-.column-flex {
-    width: 40%;
-    height: 50%;
-    border: 1px solid white;
-    background-color: aqua;
-}
 
 .design-travel {
     font-weight: bold;
@@ -1015,6 +1001,91 @@ h1 {
     }
 }
 
+/*card stuff */
+.column-flex {
+    width: 40%;
+    height: 62%;
+    border: 1px solid white;
+    margin: 20px;
+}
 
+.box {
+	display:flex;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-flow: column wrap;
+    height: 100vh;
+    width: 110vw;
+}
+
+.cards {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-top: 15px;
+	padding: 1.5%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.card {
+	position: relative;
+	margin-bottom: 20px; 
+	padding-bottom: 30px; 
+	background-color: #fff;
+	color: black; 
+	text-decoration: none;
+    }
+
+	span {
+		display: block;
+	}
+	.card-summary {
+		padding: 5% 5% 3% 5%;
+	}
+	.card-header {
+		position: relative;
+		height: 175px;
+		overflow: hidden;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-color: rgba(white,.15);
+ 		background-blend-mode: overlay;
+	}
+	.card-title {
+		color: black;
+		font-family: 'Roboto Condensed', sans-serif;
+        top: 25px;
+	}
+	.card-meta {
+		max-height: 0;
+		overflow: hidden;
+		color: #666;
+		font-size: .78em;
+		text-transform: uppercase;
+		position: absolute;
+		bottom: 5%;
+		padding: 0 5%;
+	}
+
+
+img {
+	max-width: 100%; 
+}
+
+
+/*.box {
+
+    display:flex;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-flow: column wrap;
+    height: 100vh;
+} */
 
 
