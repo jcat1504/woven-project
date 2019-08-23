@@ -1079,13 +1079,25 @@ img {
 }
 
 
-/*.box {
+@media screen and (min-width: 600px) {
+    .col-12 {
+    width: 120vw;
+    display: block;
+    right: 8%;
+    }
+}
 
-    display:flex;
-    justify-content: center !important;
-    align-items: center !important;
-    flex-flow: column wrap;
-    height: 100vh;
-} */
-
-
+@media screen and (min-width: 500px) {
+    .col-12 {
+    width: 120vw;
+    display: block;
+    right: 8%;
+    }
+}
+@media screen and (max-width: 635px) {
+    .column-flex {
+    width: 100vw;
+    display: block;
+    right: 8%;
+    }
+}
