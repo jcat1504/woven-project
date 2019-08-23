@@ -1004,8 +1004,7 @@ h1 {
 /*card stuff */
 .column-flex {
     width: 40%;
-    height: 62%;
-    border: 1px solid white;
+    height: 66%;
     margin: 20px;
 }
 
@@ -1043,17 +1042,19 @@ h1 {
 
 	span {
 		display: block;
+
 	}
 	.card-summary {
 		padding: 5% 5% 3% 5%;
 	}
 	.card-header {
-		position: relative;
-		height: 175px;
+        height: 60%;
+        width: 100%;
 		overflow: hidden;
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: center;
+        object-fit: cover;
+        background-position-y: 0;
 		background-color: rgba(white,.15);
  		background-blend-mode: overlay;
 	}
@@ -1089,15 +1090,16 @@ img {
 
 @media screen and (min-width: 500px) {
     .col-12 {
-    width: 120vw;
+    width: 100vw;
     display: block;
     right: 8%;
     }
 }
-@media screen and (max-width: 635px) {
-    .column-flex {
+
+@media screen and (min-width: 700px) {
+    .col-md-4 {
     width: 100vw;
     display: block;
-    right: 8%;
+    right: 3%;
     }
 }
