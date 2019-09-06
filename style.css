@@ -1010,9 +1010,6 @@ h1 {
 
 .box {
 	display:flex;
-    justify-content: center !important;
-    align-items: center !important;
-    flex-flow: column wrap;
     height: 100vh;
     width: 110vw;
 }
