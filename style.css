@@ -1076,27 +1076,35 @@ img {
 	max-width: 100%; 
 }
 
+@media screen and (max-width: 600px) {
+    .col-md-4 {
+    display: block;
+    right: 10%;
+    flex: 0 0 auto;
+    width: 450px;
+    right: 6%;
+    }
+}
+
 
 @media screen and (min-width: 600px) {
-    .col-12 {
-    width: 120vw;
-    display: block;
-    right: 8%;
-    }
-}
-
-@media screen and (min-width: 500px) {
-    .col-12 {
-    width: 100vw;
-    display: block;
-    right: 8%;
-    }
-}
-
-@media screen and (min-width: 700px) {
     .col-md-4 {
-    width: 100vw;
     display: block;
-    right: 3%;
+    right: 10%;
+    flex: 0 0 auto;
+    width: 550px;
+    right: 6%;
     }
 }
+
+@media screen and (min-width: 650px) {
+    .col-md-4 {
+    display: block;
+    right: 10%;
+    flex: 0 0 auto;
+    width: 650px;
+    right: 5%;
+    }
+}
+
+
