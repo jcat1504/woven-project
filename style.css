@@ -26,7 +26,7 @@ html {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 1000;
+    height: 100%;
     border-top: 1px solid #000;
     background: #fff;
     z-index: 1;
@@ -74,7 +74,7 @@ html {
 
 /*content2 is everything else under white box*/
 .content2 {
-  height: 200vh;
+  height: 600vh;
   background:  #edecec;
   font-family: 'minion-pro', serif;
   z-index: 100;
@@ -1044,7 +1044,9 @@ h1 {
     .design-tab {
         padding-top: 4%;
         font-family: 'p22-underground', sans-serif;
-        font-size: 10px;
+        font-size: 11px;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
     }
 	.card-summary {
 		padding-top: 5%;
@@ -1074,12 +1076,13 @@ h1 {
 	}
 	.card-meta {
 		max-height: 0;
-		color: #666;
-		font-size: .78em;
+		font-size: .85em;
 		text-transform: uppercase;
 		position: absolute;
+        font-weight: bold;
 		bottom: 5%;
-		padding: 0 5%;
+		padding: 0 0 0 80%;
+        /*top right bottom left */
 	}
 
 
@@ -1087,6 +1090,7 @@ img {
 	max-width: 100%; 
 }
 
+/*600px and down */
 @media screen and (max-width: 600px) {
     .col-md-4 {
     display: block;
@@ -1094,6 +1098,7 @@ img {
     flex: 0 0 auto;
     width: 450px;
     right: 6%;
+    margin-top: -1%;
     }
 }
 
@@ -1108,7 +1113,9 @@ img {
     }
 }
 
-@media screen and (min-width: 650px) {
+
+
+@media screen and (min-width: 758px) {
     .col-md-4 {
     display: block;
     right: 10%;
