@@ -1,4 +1,4 @@
-# Project Title
+# Woven Project Magazine.
 
 Mock-up website of wovenmagazine.com
 
